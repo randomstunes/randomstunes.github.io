@@ -1,0 +1,199 @@
+/*
+Changelog:
+
+3/13/23
+removed unused stuff, cleaned up, added comments
+
+3/14/23
+footer now goes to bottom, added tiled background
+
+7/15/25
+dusted this off, made it less gaudy and more pleasant to look at and read
+the footer ACTUALLY goes to the bottom now, smh
+
+7/16/25
+whole lotta changes
+basically the whole website looks different now
+cleaned up redundant things, ordered as it is in the html
+*/
+
+/*main background*/
+body {
+	background-image: url(img/bg/bg.png);
+	color: rgb(0, 0, 0);
+	font-family: "Times New Roman", sans-serif;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center right;
+}
+
+/*background tint*/
+.bgoverlay {
+	background-color: #d1d1d1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+}
+
+/*header/footer (and related) element styles*/
+header {
+	text-align: center;
+	font-size: 175%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/*header icon style*/
+.headericon {
+	width: 60px;
+	position: relative;
+}
+
+/*navbar and main content container*/
+.thepage {
+	margin: 0 auto;
+	width: auto;
+	max-width: 1300px;
+}
+
+/*Fancy text box
+.main-content {
+	display: block;
+	background-color: #051C04e0;
+	margin-left: 230px;
+	margin-right: 0;
+	margin-top: 0;
+	padding: 25px;
+	border-top: 3px green solid;
+	border-bottom: 3px green solid;
+	line-height: 1.5em;
+	width: auto;
+}
+
+
+
+/*for embedding images in main-content*/
+.scroll-container-nobg {
+	overflow: auto;
+	white-space: nowrap;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+
+
+
+/*ACTUALLY drops footer to bottom of screen now*/
+footer {
+	clear: both;
+}
+
+/*used in divs to center stuff*/
+.center {
+	text-align: center;
+}
+
+/*Tooltips*/
+/*
+To use:
+<div class="tooltip">Text you want tooltip on
+	<span class="tooltiptext">Tooltip text</span>
+</div> 
+use span instead of div on the outside for non-breaking text.
+*/
+
+nav {
+    padding: 15px;
+    text-align: center;
+}
+
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+.select-hover:hover {
+	outline: green solid 4px;
+	cursor: help;
+}
+
+/*link colors*/
+
+.link-title {
+  font-size: 1.5em;
+  padding-left: 5px;
+  font-weight: bolder;
+}
+
+/*horizontal rule*/
+hr {
+	color: #2f612f;
+	background-color: green;
+	height: 3px;
+	width: 100%;
+}
+
+/*tables*/
+table, th, td {
+	border: 1px solid green;
+	border-collapse: collapse;
+}
+
+th, td {
+	background-color: #204120;
+	padding: 5px;
+}
+
+ul, li {
+	padding-bottom: 1em;
+}
+
+/*discord style code blocks*/
+code, pre {
+	background-color: #0D0E1B;
+	padding: 5px;
+	border: 1px solid #3A3A46;
+	border-radius: 5px;
+	font-size: 1.1em;
+}
+
+/*class for centering tables*/
+.centertable {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*fancy style for block quotes*/
+blockquote {
+  background-color: #222526;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* END OF FILE */
